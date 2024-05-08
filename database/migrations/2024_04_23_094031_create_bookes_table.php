@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('bookes', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->integer('year');
+            // $table->integer('number_of_page');
             $table->timestamps();
         });
     }
