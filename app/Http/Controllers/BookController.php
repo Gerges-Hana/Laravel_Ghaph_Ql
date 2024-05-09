@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Booke;
+use App\Models\Book;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\StoreBookeRequest;
-use App\Http\Requests\UpdateBookeRequest;
+use App\Http\Requests\StoreBookRequest;
+use App\Http\Requests\UpdateBookRequest;
 
-class BookeController extends Controller
+class BookController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -28,7 +28,7 @@ class BookeController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreBookeRequest $request)
+    public function store(StoreBookRequest $request)
     {
         //
     }
@@ -36,7 +36,7 @@ class BookeController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Booke $booke)
+    public function show(Book $book)
     {
         //
     }
@@ -44,7 +44,7 @@ class BookeController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Booke $booke)
+    public function edit(Book $book)
     {
         //
     }
@@ -52,7 +52,7 @@ class BookeController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateBookeRequest $request, Booke $booke)
+    public function update(UpdateBookRequest $request, Book $book)
     {
         //
     }
@@ -60,7 +60,7 @@ class BookeController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Booke $booke)
+    public function destroy(Book $book)
     {
         //
     }

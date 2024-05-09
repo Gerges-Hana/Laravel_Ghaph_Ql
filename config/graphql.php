@@ -78,22 +78,24 @@ return [
         'default' => [
             'query' => [
                 // ExampleQuery::class,
-                'students' => App\GraphQL\Queries\StudentsQuery::class,
+                // 'students' => App\GraphQL\Queries\StudentsQuery::class,
+                'book' => \App\GraphQl\Query\BookQuery::class,
+                'books' => \App\GraphQl\Query\BooksQuery::class,
 
             ],
             'mutation' => [
                 // ExampleMutation::class,
-                 // Create a student
-                 'createStudent' => App\GraphQL\Mutations\CreateStudentMutation::class,
-                 // update student
-                 'updateStudent' => App\GraphQL\Mutations\UpdateStudentMutation::class,
-                 // delete a student
-                 'deleteStudent' => App\GraphQL\Mutations\DeleteStudentMutation::class,
+                //  // Create a student
+                //  'createStudent' => App\GraphQL\Mutations\CreateStudentMutation::class,
+                //  // update student
+                //  'updateStudent' => App\GraphQL\Mutations\UpdateStudentMutation::class,
+                //  // delete a student
+                //  'deleteStudent' => App\GraphQL\Mutations\DeleteStudentMutation::class,
             ],
             // The types only available in this schema
             'types' => [
                 // ExampleType::class,
-                'Student' => App\GraphQL\Types\StudentType::class,
+                // 'Student' => App\GraphQL\Types\StudentType::class,
 
             ],
 
@@ -121,6 +123,8 @@ return [
         // ExampleType::class,
         // ExampleRelationType::class,
         // \Rebing\GraphQL\Support\UploadType::class,
+        \App\GraphQl\Types\BookType::class,
+
     ],
 
     // This callable will be passed the Error object for each errors GraphQL catch.
