@@ -81,6 +81,8 @@ return [
                 // 'students' => App\GraphQL\Queries\StudentsQuery::class,
                 'book' => \App\GraphQl\Query\BookQuery::class,
                 'books' => \App\GraphQl\Query\BooksQuery::class,
+                'author' => \App\GraphQl\Query\Author\AuthorQuery::class,
+                'authors' => \App\GraphQl\Query\Author\AuthorsQuery::class,
 
             ],
             'mutation' => [
@@ -124,6 +126,7 @@ return [
         // ExampleRelationType::class,
         // \Rebing\GraphQL\Support\UploadType::class,
         \App\GraphQl\Types\BookType::class,
+        \App\GraphQl\Types\AuthorType::class,
 
     ],
 

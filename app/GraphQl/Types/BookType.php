@@ -31,6 +31,10 @@ class  BookType extends GraphQLType
                 'type' => Type::int(),
                 'description' => 'The year of the Book'
             ],
+            'author' => [
+                'type' => GraphQL::type('AuthorType'),
+                'description' => 'The author of the Book'
+            ],
             // 'name' => [
             //     'type' => Type::string(),
             //     'description' => 'The name of the student'
